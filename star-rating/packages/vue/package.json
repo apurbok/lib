@@ -1,0 +1,36 @@
+{
+  "name": "@libraries/vue-star-rating",
+  "version": "0.1.0",
+  "description": "Vue 3 star rating with linear partial fills",
+  "type": "module",
+  "main": "./dist/vue-star-rating.umd.cjs",
+  "module": "./dist/vue-star-rating.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/vue-star-rating.js",
+      "require": "./dist/vue-star-rating.umd.cjs"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "vite build && vue-tsc --declaration --emitDeclarationOnly -p tsconfig.build.json",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vue": "^3.4.0"
+  },
+  "dependencies": {
+    "@libraries/star-rating-core": "workspace:*"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.1.10"
+  }
+}

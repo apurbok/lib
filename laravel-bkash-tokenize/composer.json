@@ -1,0 +1,55 @@
+{
+    "name": "libraries/laravel-bkash-tokenize",
+    "description": "bKash Tokenized Checkout v2 integration for Laravel 10/11",
+    "type": "library",
+    "license": "MIT",
+    "keywords": [
+        "laravel",
+        "bkash",
+        "payment",
+        "bangladesh",
+        "tokenized-checkout"
+    ],
+    "authors": [
+        {
+            "name": "Libraries",
+            "email": "packages@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/contracts": "^10.0|^11.0",
+        "illuminate/http": "^10.0|^11.0",
+        "illuminate/routing": "^10.0|^11.0",
+        "illuminate/support": "^10.0|^11.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^8.0|^9.0",
+        "phpunit/phpunit": "^10.5|^11.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Libraries\\BkashTokenize\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Libraries\\BkashTokenize\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Libraries\\BkashTokenize\\BkashServiceProvider"
+            ],
+            "aliases": {
+                "Bkash": "Libraries\\BkashTokenize\\Facades\\Bkash"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    }
+}

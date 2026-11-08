@@ -1,0 +1,35 @@
+:root {
+  font-family: system-ui, sans-serif;
+  color: #111;
+  background: #fafafa;
+}
+
+body {
+  margin: 0;
+  padding: 2rem;
+}
+
+.demo-page {
+  max-width: 32rem;
+  margin: 0 auto;
+}
+
+.demo-section {
+  margin-top: 2rem;
+  padding: 1.25rem;
+  background: #fff;
+  border-radius: 0.5rem;
+  border: 1px solid #e5e5e5;
+}
+
+.demo-meta {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+code {
+  background: #f0f0f0;
+  padding: 0.1rem 0.35rem;
+  border-radius: 0.25rem;
+}

@@ -1,0 +1,26 @@
+{
+  "name": "@libraries/demo",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@libraries/react-otp-input": "workspace:*",
+    "@libraries/vue-otp-input": "workspace:*",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "vue": "^3.5.12"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.3",
+    "@vitejs/plugin-vue": "^5.1.4",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}

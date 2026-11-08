@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linear Star Rating Demo</title>
+    <style>
+      body {
+        font-family: system-ui, sans-serif;
+        margin: 2rem;
+        line-height: 1.5;
+        color: #1a1a1a;
+      }
+      section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+        border-bottom: 1px solid #e5e5e5;
+      }
+      h1 {
+        margin-top: 0;
+      }
+      h2 {
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+      }
+      .meta {
+        color: #555;
+        font-size: 0.9rem;
+        margin: 0.25rem 0 0.75rem;
+      }
+      code {
+        background: #f4f4f4;
+        padding: 0.1rem 0.35rem;
+        border-radius: 4px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Linear Star Rating</h1>
+    <p>
+      Decimal ratings use <strong>linear</strong> per-star fill (e.g. 4.6 → fifth
+      star 60% filled).
+    </p>
+
+    <section id="core-section">
+      <h2>Core (<code>getStarFills</code>)</h2>
+      <p class="meta" id="core-meta"></p>
+      <pre id="core-output"></pre>
+    </section>
+
+    <section>
+      <h2>React</h2>
+      <p class="meta">Interactive — arrow keys when focused</p>
+      <div id="react-root"></div>
+    </section>
+
+    <section>
+      <h2>Vue 3</h2>
+      <div id="vue-root"></div>
+    </section>
+
+    <section>
+      <h2>Web Component</h2>
+      <p class="meta"><code>&lt;linear-star-rating&gt;</code></p>
+      <linear-star-rating
+        id="wc-rating"
+        value="4.6"
+        max="5"
+        size="28"
+        aria-label="Product rating"
+      ></linear-star-rating>
+      <p class="meta" id="wc-value">Value: 4.6</p>
+    </section>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
